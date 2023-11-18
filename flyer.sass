@@ -1,0 +1,341 @@
+$bright-red: #B8050B
+$dark-brown: #251307
+$white:      #ffffff
+$bodyBackgroundColor: #CACACA
+
+
+*
+    margin: 0
+    box-sizing: border-box
+
+body
+    background-color: $bodyBackgroundColor
+
+#main-container
+    
+    width: 21rem
+    height: 30rem
+    min-width: 10rem
+    min-height: 15rem
+    margin: 4rem auto
+    display: flex
+    flex-direction: column
+    padding: 0
+    background-color: $dark-brown
+
+#main-item
+    width: 100%
+    height: 12rem
+    outline: 0.9rem solid $white
+    background-image: url("flyerImgs/main_item_img.jpg")
+    background-repeat: no-repeat
+    background-size: cover
+    clip-path: polygon(0 0, 100% 0, 100%  70%, 0 100%)
+
+    h3
+        color: #ffffff
+        position: relative
+        top: 10%
+        left:6%
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+        // font-weight: 300
+        font-size: 1rem
+
+        span
+            display: block
+            font-size: 0.6rem
+            font-weight: lighter
+
+#section-wrapper
+    width: 100%
+    height: 12.2rem
+    background-color: $white
+    clip-path: polygon(0 0, 100% 0, 100%  70%, 0 100%)
+
+
+#subImg
+    display: flex
+    justify-content: space-around
+    position: relative
+    width: 100%
+    height: 6rem
+    padding: 0.7rem
+
+    
+
+#wrapper1, #wrapper2, #wrapper3
+    display: inline-block
+    // padding: 0rem
+    clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0% 50%)
+    background-color: $white
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    position: absolute
+
+#wrapper1
+    width: 4.7rem
+    height: 4.2rem
+    left: 3%
+    bottom: 75%
+
+    .img
+        width: 4.2rem
+        height: 3.8rem
+        clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0% 50%)
+
+        img
+            width: 100%
+            height: 100%
+
+
+#wrapper2
+    width: 5.7rem
+    height: 5.2rem
+    left: 32%
+    bottom: 85%
+
+    .img
+        width: 5.2rem
+        height: 4.8rem
+        clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0% 50%)
+
+        img
+            width: 100%
+            height: 100%
+
+
+#wrapper3
+    width: 6.7rem
+    height: 6.2rem
+    right: 3%
+    bottom: 98%
+
+
+
+    .img
+        width: 6.2rem
+        height: 5.8rem
+        clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0% 50%)
+
+        img
+            width: 100%
+            height: 100%
+
+
+#discount
+    color: $white
+    text-align: center
+    position: relative
+    font-size: 0.9rem
+    left: 4%
+    top: 5%
+
+    span
+        display: block
+        font-size: 0.4rem
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+        font-weight: lighter
+        
+        
+#service
+    color: $white
+    text-align: center
+    position: relative
+    font-size: 0.9rem
+    right: 10%
+    bottom:15%
+
+
+    span
+        display: block
+        font-size: 0.6rem
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+        font-weight: lighter
+
+
+
+
+
+
+#price-tag1-wrapper1, #price-tag1-wrapper2, #price-tag1-wrapper3
+    display: inline-block
+    width:2.3rem
+    height: 2rem
+    clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0% 50%)
+    background-color: $bright-red
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    position: absolute    
+    cursor: pointer
+    transition: 0.3s ease-in
+
+#price-tag1-wrapper1:hover, #price-tag1-wrapper2:hover, #price-tag1-wrapper3:hover
+    background-color: #036e11
+
+
+#price-tag1-wrapper1
+    left: 9%
+    top: 10%
+
+#price-tag1-wrapper2
+    left: 40.3%
+    top: 1%
+
+#price-tag1-wrapper3
+    left: 75.7%
+    bottom: 79%
+
+#price-tag1, #price-tag2, #price-tag3
+    width:1.8rem
+    height: 1.6rem
+    background-color: black
+    clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0% 50%)
+    color: $white
+    padding: 0.1rem
+    font-size: 0.8rem
+    text-align: center
+    justify-content: center
+    align-items: center
+    display: flex
+    flex-direction: column
+    
+
+
+#contents
+    widows: 100%
+    height: 12rem
+    display: flex
+    padding: 0 1rem
+    // background-color: red
+    position: relative
+    bottom: 8%
+
+#restaurant-info, #restaurant-service
+    display: flex
+    flex-direction: column
+    width: 50%
+    margin-right: 1.0rem
+    
+
+
+    p
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+        font-size: 0.6rem
+        width: 9rem
+        transition: 0.3 ease-in
+        color: $white
+
+      
+
+
+#headers
+    margin-bottom: 1rem
+    // border: 1px solid black
+
+
+    :nth-child(1)
+        font-weight: lighter
+
+    :nth-child(2)
+        color: $white
+        font-weight: bold
+
+    :nth-child(3)
+        font-weight: bolder
+        
+
+    h1
+        font-size: 1.6rem
+        text-transform: uppercase
+        color: $bright-red
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+
+
+#restaurant-service
+    // border: 1px solid black
+    h3
+        font-size: 0.64rem
+        color: white
+        margin-bottom: 0.7rem
+
+.service-paragraphs
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+        font-size: 0.6rem
+        width: 8rem
+        // border: 1px solid black
+        color: $white
+        margin-bottom: 0.6rem
+        position: relative
+        right: 24%
+        
+        // text-align: justify
+
+
+footer
+    width: 100%
+    height: 8rem
+    // border: 1px solid black
+    position: relative
+    background-color: $bright-red
+    bottom: 8.7%
+    // padding: 0.5rem
+
+    ul
+        display: flex
+        width: 100%
+        height: 100%
+        justify-content: space-between
+
+    .footer-items
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        position: relative
+        right: 5%
+        margin-right: 1rem
+        margin: 0.3rem 0
+        width: 45%
+
+        h3, h4 
+            font-size: 0.7rem
+            color: $white
+            color: #010a01
+
+        h5
+            color: $white
+            font-weight: lighter
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+            font-size: 0.66rem
+
+        p
+            font-size: 0.75rem
+            color: $white
+
+@media ( max-width: 768px)
+
+
+    body
+        background-color: #646464
+
+    #main-container
+        
+        width: 21/2rem
+        height: 30/2rem
+        min-width: 10/2rem
+        min-height: 15/2rem
+        margin: 4/2rem auto
+        display: flex
+        flex-direction: column
+        padding: 0
+        background-color: $dark-brown
+
+    #main-item
+        width: 100%
+        height: 12rem
+        outline: 0.9rem solid $white
+    
